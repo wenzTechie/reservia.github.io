@@ -4,12 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&display=swap" rel="stylesheet">
+    <title>Reservia</title>
 </head>
 
 <body>
-    
+    <header>
+        <div id="logo">
+            <a href="#">
+                <img src="img/ReserviaLogo.png" alt="Reservia.com - Dream Vacations">
+            </a>
+        </div>
+        <nav>
+            <a class="navLink" href="#">Accommodations</a>
+            <a class="navLink" href="#">Actvities</a>
+        </nav>
+        <div id="signup">
+            <a href="#">Sign Up</a>
+        </div>
+    </header>
+    <section id="tagline">
+        <p class="txtBold">Find a place for your dream vacation</p>
+        <p class="txtLight">Downtown or in nature</p>
+    </section>
+    <section id="search">
+        <form action="">
+            <div class="inputComp"><!-- icon goes here --></div>
+            <div class="inputComp"><input type="text" name="searchfield" id="searchfield" placeholder="Marselle, France" ></div>
+            <div class="inputComp"><p>Search</p></div>
+        </form>
+        <div id="filters">
+            <p class="txtBold">Filters</p>
+            <div class="filter">
+                <p class="filtIcon"></p>
+                <p class="txtBold">Low cost</p>
+            </div>
+            <div class="filter">
+                <p class="filtIcon"></p>
+                <p class="txtBold">Family-friendly</p>
+            </div>
+            <div class="filter">
+                <p class="filtIcon"></p>
+                <p class="txtBold">Romantic</p>
+            </div>
+            <div class="filter">
+                <p class="filtIcon"></p>
+                <p class="txtBold">Pets allowed</p>
+            </div>
+        </div>
 
-
+        <div id="resInfo">
+            <p class="txtLight"><span><!-- icon goes here --></span> More than 500 accommodations are available in this city</p>
+        </div>
+    </section>
+    <section id="accomOuter" class="resOut">
+        <p class="txtBold resHead">Accomodations in Marseille</p>
+    </section>
+    <section id="popOuter" class="resOut">
+        <p class="txtBold resHead">Most Popular</p>
+    </section>
+    <section id="activOuter" class="resOut">
+        <p class="txtBold resHead">Activities in Marseille</p>
+    </section>
+    <footer>
+        <div class="footSect">
+            <a href="#" class="txtBold">About</a>
+            <a href="#" class="txtLight">Site Map</a>
+            <a href="#" class="txtLight">General Terms and Conditions</a>
+            <a href="#" class="txtLight">Data and Privacy</a>
+        </div>
+        <div class="footSect">
+            <a href="#" class="txtBold">Our Accommodations</a>
+            <a href="#" class="txtLight">Qaulity Assessment</a>
+            <a href="#" class="txtLight">You have a hotel?</a>
+        </div>
+        <div class="footSect">
+            <a href="#" class="txtBold">Assistance</a>
+            <a href="#" class="txtLight">Help Desk</a>
+            <a href="#" class="txtLight">Contact Us</a>
+        </div>
+    </footer>
 </body>
 
 </html>
