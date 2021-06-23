@@ -119,6 +119,11 @@ nav a.active {
     font-size: 17px;
 }
 
+::placeholder {
+    color: #252525;
+    font-weight: 800;
+}
+
 .sButton {
     background-color: #0065FC;
     color: white;
@@ -133,3 +138,38 @@ nav a.active {
     cursor: pointer;
 }
 
+/* Filters */
+#filters {
+    margin: 30px 0 30px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.filter {
+    margin-left: 20px;
+    border: solid 2px #e8e7e7;
+    padding: 0 20px 0 0;
+    border-radius: 27px;
+}
+
+.filter i {
+    color: #0045ab;
+    background-color: #DEEBFF;
+    padding: 20px;
+    margin: -3px 10px -3px -3px;
+    border-radius: 50%;
+    font-size: 19px;
+}
+
+.filter p {
+    margin: 0px;
+}
+
+#resInfo i {
+    margin-right: 7px;
+    color: #0045ab;
+    border: solid 1px #DEEBFF;
+    border-radius: 50%;
+    padding: 3px 8px;
+}
