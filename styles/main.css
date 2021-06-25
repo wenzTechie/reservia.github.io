@@ -236,6 +236,8 @@ nav a.active {
     border-radius: 22px;
     margin-top: 30px;
     overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 5px 13px rgba(100, 100, 100, 0.4);
 }
 
 .accomImg {
@@ -253,16 +255,21 @@ nav a.active {
 }
 
 .accomInfo h4 {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 800;
+    padding-top: 7px;
+
 }
 
 .accomInfo p {
-    font-size: 10px;
+    font-size: 14px;
+    padding: 4px 0 3px 10px;
 }
 
 .accomInfo .fa-star {
     color: #0065FC;
+    font-size: 15px;
+    margin-right: -3px;
 }
 
 
