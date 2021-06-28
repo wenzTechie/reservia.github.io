@@ -149,6 +149,21 @@ nav a.active {
     border: solid 2px #e8e7e7;
     padding: 0 20px 0 0;
     border-radius: 27px;
+    cursor: pointer;
+}
+
+/* .filter:hover {
+    color: #0065FC !important;
+    border: solid 2px #0065FC;
+} */
+
+.filter:hover > p > i {
+    background-color: #0045ab;
+    color: #DEEBFF;
+}
+
+.filter:hover > .txtBold {
+    color: #0065FC;
 }
 
 .filter i {
