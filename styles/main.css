@@ -158,7 +158,7 @@ nav a.active {
 } */
 
 .filter:hover > p > i {
-    background-color: #0045ab;
+    background-color: #0065FC;
     color: #DEEBFF;
 }
 
@@ -167,7 +167,7 @@ nav a.active {
 }
 
 .filter i {
-    color: #0045ab;
+    color: #0065FC;
     background-color: #DEEBFF;
     padding: 20px;
     margin: -3px 10px -3px -3px;
@@ -181,7 +181,7 @@ nav a.active {
 
 #resInfo i {
     margin-right: 7px;
-    color: #0045ab;
+    color: #0065FC;
     border: solid 1px #f2f2f2;
     border-radius: 50%;
     padding: 3px 8px;
