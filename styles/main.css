@@ -232,8 +232,8 @@ nav a.active {
 .accomInner .accomImg {
     background: no-repeat center center;
     background-size: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .accomInner div:nth-child(1) .accomImg {
