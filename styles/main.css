@@ -9,9 +9,11 @@ Secondary blue: #DEEBFF
 
 body {
     font-family: 'Raleway', sans-serif;
-    padding: 0px 60px 0px 60px;
+    padding: 0;
     margin: 0px;
     color: #252525;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -20,6 +22,10 @@ a {
 
 .txtBold {
     font-weight: 800;
+}
+
+ul li {
+    list-style: none;
 }
 
 
@@ -31,6 +37,7 @@ header {
     align-items: stretch;
     gap: 2em;
     justify-content: center;
+    padding: 0px 60px 0px 60px;
 }
 
 #logo {
@@ -76,6 +83,10 @@ nav a.active {
 
 /* Tagline */
 
+#tagline {
+    padding: 0px 60px 0px 60px;
+}
+
 #tagline h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
@@ -93,6 +104,7 @@ nav a.active {
 #formRow {
     display: flex;
     flex-direction: row;
+    padding: 0px 60px 0px 60px;
 }
 
 #formRow p {
@@ -139,6 +151,7 @@ nav a.active {
 /* Filters */
 #filters {
     margin: 30px 0 30px 0;
+    padding: 0px 60px 0px 60px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -151,11 +164,6 @@ nav a.active {
     border-radius: 27px;
     cursor: pointer;
 }
-
-/* .filter:hover {
-    color: #0065FC !important;
-    border: solid 2px #0065FC;
-} */
 
 .filter:hover > p > i {
     background-color: #0065FC;
@@ -177,6 +185,10 @@ nav a.active {
 
 .filter p {
     margin: 0px;
+}
+
+#resInfo {
+    padding: 0px 60px 0px 60px;
 }
 
 #resInfo i {
@@ -203,9 +215,10 @@ nav a.active {
 
 #accomOuter {
     width: 65%;
-    min-width: 900px;
+    max-width: 1000px;
     background-color: #f2f2f2;
     border-radius: 20px;
+    margin: 0px 60px 0px 60px;
     padding: 20px;
 }
 
@@ -293,6 +306,33 @@ nav a.active {
 }
 
 
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+
+
+}
+
+
+
+@media only screen and (min-width: 600px) {
+
+
+
+}
+
 
 /* TODOs:
-1. go back through the blues and make sure they're correct.
+- Add Flex Properties
+- Mobile styling
+- tablet styling
