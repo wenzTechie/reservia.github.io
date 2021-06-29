@@ -255,6 +255,11 @@ nav a.active {
     box-shadow: 0 5px 13px rgba(100, 100, 100, 0.4);
 }
 
+.accom:hover {
+    box-shadow: none;
+    border: solid 4px #0065FC;
+}
+
 .accomImg {
     height: 130px;
 }
