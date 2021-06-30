@@ -200,6 +200,15 @@ nav a.active {
 }
 
 /* Accomodations */
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 60px 0px 60px;
+    gap: 60px;
+}
+
 
 .resHead {
     font-size: 1.3em;
@@ -214,11 +223,12 @@ nav a.active {
 }
 
 #accomOuter {
-    width: 65%;
-    max-width: 1000px;
+    flex: 2;
+    min-width: 700px;
+    max-width: 1024px;
     background-color: #f2f2f2;
     border-radius: 20px;
-    margin: 0px 60px 0px 60px;
+    
     padding: 20px;
 }
 
@@ -306,8 +316,55 @@ nav a.active {
 }
 
 /* Poppular */
+#popOuter {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 20px;
+}
 
+#popItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 20px 20px 20px;
+    height: 86%;
+}
 
+.popItem {
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border: solid 4px white;
+    border-radius: 20px;
+}
+
+.popImg {
+    width: 40%;
+    height: 140px;
+
+}
+
+.popInfo {
+    width: 60%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.popInfo h4, .popInfo p, .popInfo .stars {
+    margin: 0px;
+}
+
+.popInfo h4 {
+    padding: 15px 15px 0 15px;
+    font-size: 17px;
+    font-weight: 800;
+}
 
 /* Footer */
 
