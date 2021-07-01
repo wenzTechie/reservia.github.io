@@ -415,6 +415,88 @@ main {
 #activOuter {
     margin-top: 60px;
     padding: 0px 60px 0px 60px;
+   
+}
+
+#activInner {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.actItem {
+    width: 25%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 13px rgba(100, 100, 100, 0.4);
+}
+
+.actFour {
+    height: 440px;
+}
+
+#activInner div:nth-child(1) .actImg {
+    background: no-repeat center center;
+    background-size: cover;
+    background-image: url('../img/activities/oldport.jpg');
+}
+
+.actFour .actImg {
+    height: 375px;
+}
+#activInner div:nth-child(2) .actImg {
+    background: no-repeat center center;
+    background-size: cover;
+    background-image: url('../img/activities/pomegues.jpg');
+}
+
+.actThree {
+    height: 300px;
+}
+
+#activInner div:nth-child(3) .actImg {
+    background: no-repeat center center;
+    background-size: cover;
+    background-image: url('../img/activities/frioul.jpg');
+}
+
+#activInner div:nth-child(4) .actImg {
+    background: no-repeat center center;
+    background-size: cover;
+    background-image: url('../img/activities/calanques.jpg');
+}
+
+#activInner div:nth-child(5) .actImg {
+    background: no-repeat center center;
+    background-size: cover;
+    background-image: url('../img/activities/notredame.jpg');
+}
+
+#activInner div:nth-child(6) .actImg {
+    background: no-repeat center center;
+    background-size: cover;
+    background-image: url('../img/activities/longchamp.jpg');
+}
+
+.actThree .actImg {
+    height: 275px;
+}
+
+.actTwo {
+    height: 200px;
+}
+.actTwo .actImg {
+    height: 175px;
+}
+
+.actOne {
+    height: 100px;
+}
+.actOne .actImg {
+    height: 75px;
 }
 
 #activOuter .resHead {
