@@ -315,12 +315,13 @@ main {
     margin-right: -3px;
 }
 
-/* Poppular */
+/* Poppular Asside */
 #popOuter {
     flex: 1;
     background-color: #f2f2f2;
     padding: 20px;
     border-radius: 20px;
+    min-width: 390px;
 }
 
 #popItems {
@@ -330,6 +331,21 @@ main {
     padding: 0 20px 20px 20px;
     height: 86%;
 }
+
+#popIntro {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#popIntro i {
+    font-size: 21px;
+    margin: 20px 20px 0 0;
+
+}
+
 
 .popItem {
     height: 140px;
@@ -343,7 +359,20 @@ main {
 .popImg {
     width: 40%;
     height: 140px;
+    background: no-repeat center center;
+    background-size: cover;
+}
 
+#popItems div:nth-child(1) .popImg {
+    background-image: url("../img/morningsun.jpg");
+}
+
+#popItems div:nth-child(2) .popImg {
+    background-image: url("../img/aucoeurde.jpg");
+}
+
+#popItems div:nth-child(3) .popImg {
+    background-image: url("../img/toutbleau.jpg");
 }
 
 .popInfo {
@@ -365,6 +394,22 @@ main {
     font-size: 17px;
     font-weight: 800;
 }
+
+.popInfo p {
+    font-size: 14px;
+    padding: 0 15px;
+}
+
+.popInfo > .stars {
+    padding: 0 0 10px 15px;
+}
+
+.popInfo .fa-star {
+    color: #0065FC;
+    font-size: 15px;
+    margin-right: -3px;
+}
+
 
 /* Footer */
 
