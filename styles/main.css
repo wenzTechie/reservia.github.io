@@ -200,6 +200,15 @@ nav a.active {
 }
 
 /* Accomodations */
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 60px 0px 60px;
+    gap: 60px;
+}
+
 
 .resHead {
     font-size: 1.3em;
@@ -214,11 +223,12 @@ nav a.active {
 }
 
 #accomOuter {
-    width: 65%;
-    max-width: 1000px;
+    flex: 2;
+    min-width: 700px;
+    max-width: 1024px;
     background-color: #f2f2f2;
     border-radius: 20px;
-    margin: 0px 60px 0px 60px;
+    
     padding: 20px;
 }
 
@@ -305,8 +315,100 @@ nav a.active {
     margin-right: -3px;
 }
 
-/* Poppular */
+/* Poppular Asside */
+#popOuter {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 20px;
+    min-width: 390px;
+}
 
+#popItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 20px 20px 20px;
+    height: 86%;
+}
+
+#popIntro {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#popIntro i {
+    font-size: 21px;
+    margin: 20px 20px 0 0;
+
+}
+
+
+.popItem {
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border: solid 4px white;
+    border-radius: 20px;
+}
+
+.popImg {
+    width: 40%;
+    height: 140px;
+    background: no-repeat center center;
+    background-size: cover;
+}
+
+#popItems div:nth-child(1) .popImg {
+    background-image: url("../img/morningsun.jpg");
+}
+
+#popItems div:nth-child(2) .popImg {
+    background-image: url("../img/aucoeurde.jpg");
+}
+
+#popItems div:nth-child(3) .popImg {
+    background-image: url("../img/toutbleau.jpg");
+}
+
+.popInfo {
+    width: 60%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.popInfo h4, .popInfo p, .popInfo .stars {
+    margin: 0px;
+}
+
+.popInfo h4 {
+    padding: 15px 15px 0 15px;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.popInfo p {
+    font-size: 14px;
+    padding: 0 15px;
+}
+
+.popInfo > .stars {
+    padding: 0 0 10px 15px;
+}
+
+.popInfo .fa-star {
+    color: #0065FC;
+    font-size: 15px;
+    margin-right: -3px;
+}
 
 
 /* Footer */
