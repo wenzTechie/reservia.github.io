@@ -411,6 +411,18 @@ main {
 }
 
 
+/* Activities */
+#activOuter {
+    margin-top: 60px;
+    padding: 0px 60px 0px 60px;
+}
+
+#activOuter .resHead {
+    margin-left: 0px;
+}
+
+
+
 /* Footer */
 
 footer {
@@ -441,3 +453,4 @@ footer {
 - Add Flex Properties
 - Mobile styling
 - tablet styling
+- Hovers and  on most popular
