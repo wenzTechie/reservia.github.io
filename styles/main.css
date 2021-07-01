@@ -9,9 +9,11 @@ Secondary blue: #DEEBFF
 
 body {
     font-family: 'Raleway', sans-serif;
-    padding: 0px 60px 0px 60px;
+    padding: 0;
     margin: 0px;
     color: #252525;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -20,6 +22,10 @@ a {
 
 .txtBold {
     font-weight: 800;
+}
+
+ul li {
+    list-style: none;
 }
 
 
@@ -31,6 +37,7 @@ header {
     align-items: stretch;
     gap: 2em;
     justify-content: center;
+    padding: 0px 60px 0px 60px;
 }
 
 #logo {
@@ -76,6 +83,10 @@ nav a.active {
 
 /* Tagline */
 
+#tagline {
+    padding: 0px 60px 0px 60px;
+}
+
 #tagline h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
@@ -93,6 +104,7 @@ nav a.active {
 #formRow {
     display: flex;
     flex-direction: row;
+    padding: 0px 60px 0px 60px;
 }
 
 #formRow p {
@@ -139,6 +151,7 @@ nav a.active {
 /* Filters */
 #filters {
     margin: 30px 0 30px 0;
+    padding: 0px 60px 0px 60px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -152,13 +165,8 @@ nav a.active {
     cursor: pointer;
 }
 
-/* .filter:hover {
-    color: #0065FC !important;
-    border: solid 2px #0065FC;
-} */
-
 .filter:hover > p > i {
-    background-color: #0045ab;
+    background-color: #0065FC;
     color: #DEEBFF;
 }
 
@@ -167,7 +175,7 @@ nav a.active {
 }
 
 .filter i {
-    color: #0045ab;
+    color: #0065FC;
     background-color: #DEEBFF;
     padding: 20px;
     margin: -3px 10px -3px -3px;
@@ -179,15 +187,28 @@ nav a.active {
     margin: 0px;
 }
 
+#resInfo {
+    padding: 0px 60px 0px 60px;
+}
+
 #resInfo i {
     margin-right: 7px;
-    color: #0045ab;
+    color: #0065FC;
     border: solid 1px #f2f2f2;
     border-radius: 50%;
     padding: 3px 8px;
 }
 
 /* Accomodations */
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 60px 0px 60px;
+    gap: 60px;
+}
+
 
 .resHead {
     font-size: 1.3em;
@@ -202,10 +223,12 @@ nav a.active {
 }
 
 #accomOuter {
-    width: 65%;
-    min-width: 900px;
+    flex: 2;
+    min-width: 700px;
+    max-width: 1024px;
     background-color: #f2f2f2;
     border-radius: 20px;
+    
     padding: 20px;
 }
 
@@ -219,8 +242,8 @@ nav a.active {
 .accomInner .accomImg {
     background: no-repeat center center;
     background-size: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .accomInner div:nth-child(1) .accomImg {
@@ -292,7 +315,142 @@ nav a.active {
     margin-right: -3px;
 }
 
+/* Poppular Asside */
+#popOuter {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 20px;
+    min-width: 390px;
+}
+
+#popItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 20px 20px 20px;
+    height: 86%;
+}
+
+#popIntro {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#popIntro i {
+    font-size: 21px;
+    margin: 20px 20px 0 0;
+
+}
+
+
+.popItem {
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border: solid 4px white;
+    border-radius: 20px;
+}
+
+.popImg {
+    width: 40%;
+    height: 140px;
+    background: no-repeat center center;
+    background-size: cover;
+}
+
+#popItems div:nth-child(1) .popImg {
+    background-image: url("../img/morningsun.jpg");
+}
+
+#popItems div:nth-child(2) .popImg {
+    background-image: url("../img/aucoeurde.jpg");
+}
+
+#popItems div:nth-child(3) .popImg {
+    background-image: url("../img/toutbleau.jpg");
+}
+
+.popInfo {
+    width: 60%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.popInfo h4, .popInfo p, .popInfo .stars {
+    margin: 0px;
+}
+
+.popInfo h4 {
+    padding: 15px 15px 0 15px;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.popInfo p {
+    font-size: 14px;
+    padding: 0 15px;
+}
+
+.popInfo > .stars {
+    padding: 0 0 10px 15px;
+}
+
+.popInfo .fa-star {
+    color: #0065FC;
+    font-size: 15px;
+    margin-right: -3px;
+}
+
+
+/* Activities */
+#activOuter {
+    margin-top: 60px;
+    padding: 0px 60px 0px 60px;
+}
+
+#activOuter .resHead {
+    margin-left: 0px;
+}
+
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+
+
+}
+
+
+
+@media only screen and (min-width: 600px) {
+
+
+
+}
 
 
 /* TODOs:
-1. go back through the blues and make sure they're correct.
+- Add Flex Properties
+- Mobile styling
+- tablet styling
+- Hovers and  on most popular
