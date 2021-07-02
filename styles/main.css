@@ -428,7 +428,7 @@ main {
 }
 
 .actItem {
-    width: 25%;
+    width: calc(25% - 40px);
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 5px 13px rgba(100, 100, 100, 0.4);
@@ -445,7 +445,7 @@ main {
 }
 
 .actFour .actImg {
-    height: 375px;
+    height: 390px;
 }
 #activInner div:nth-child(2) .actImg {
     background: no-repeat center center;
@@ -454,7 +454,7 @@ main {
 }
 
 .actThree {
-    height: 300px;
+    height: 260px;
 }
 
 #activInner div:nth-child(3) .actImg {
@@ -482,28 +482,33 @@ main {
 }
 
 .actThree .actImg {
-    height: 275px;
+    height: 210px;
 }
 
 .actTwo {
     height: 200px;
 }
 .actTwo .actImg {
-    height: 175px;
+    height: 150px;
 }
 
 .actOne {
-    height: 100px;
+    height: 140px;
 }
 .actOne .actImg {
-    height: 75px;
+    height: 90px;
 }
 
 #activOuter .resHead {
     margin-left: 0px;
 }
 
-
+.actInfo h4 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 800;
+    padding: 15px;
+}
 
 /* Footer */
 
