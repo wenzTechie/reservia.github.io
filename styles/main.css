@@ -616,9 +616,17 @@ footer {
         border-top: none;
     }
 
-
+    /*tagline */
+    #tagline {
+        padding: 15px;
+    }
 
     /* Form Section */
+
+    #formRow {
+        justify-content: center;
+    }
+
     .sButton {
         display: none;
     }
@@ -627,10 +635,11 @@ footer {
         display: block;
         background-color: #0065FC;
         color: white;
-        padding: 10px 20px;
-        border-bottom-right-radius: 10px;
-        border-top-right-radius: 10px;
-        font-weight: 700;
+        padding: 12px;
+        border-radius: 10px;
+        font-weight: 800;
+        font-size: 18px;
+
     }
 
 }
