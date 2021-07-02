@@ -64,7 +64,7 @@ nav a {
     font-size: 17px;
 }
 
-nav a.active {
+nav a.active, nav a:hover {
     border-top: 3px solid #0065FC;
     color: #0065FC;
 }
@@ -222,6 +222,10 @@ main {
     color: #252525;
 }
 
+.resFoot:hover {
+    color: #0065fc;
+}
+
 #accomOuter {
     flex: 2;
     min-width: 700px;
@@ -343,7 +347,11 @@ main {
 #popIntro i {
     font-size: 21px;
     margin: 20px 20px 0 0;
+    cursor: pointer;
+}
 
+#popIntro i:hover {
+    color: #0065fc;
 }
 
 
@@ -354,6 +362,11 @@ main {
     overflow: hidden;
     border: solid 4px white;
     border-radius: 20px;
+    cursor: pointer;
+}
+
+.popItem:hover {
+    border: solid 4px #0065Fc;
 }
 
 .popImg {
@@ -432,6 +445,11 @@ main {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 5px 13px rgba(100, 100, 100, 0.4);
+    cursor: pointer;
+}
+
+.actItem:hover {
+    box-shadow: 0 5px 13px rgba(100, 100, 100, 0.6);
 }
 
 .actFour {
@@ -538,6 +556,10 @@ footer {
     color: #252525;
 }
 
+.footSect > li > a:hover {
+    text-decoration: underline;
+}
+
 @media only screen and (min-width: 768px) {
 
 
@@ -554,7 +576,7 @@ footer {
 
 
 /* TODOs:
-- Add Flex Properties
+
 - Mobile styling
 - tablet styling
-- Hovers and  on most popular
+
