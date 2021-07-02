@@ -112,6 +112,10 @@ nav a.active, nav a:hover {
     font-size: 18px;
 }
 
+#formRow .fa-search {
+    display: none;
+}
+
 
 .locIcon {
     background-color: #F2F2F2;
@@ -228,7 +232,7 @@ main {
 
 #accomOuter {
     flex: 2;
-    min-width: 700px;
+    
     max-width: 1024px;
     background-color: #f2f2f2;
     border-radius: 20px;
@@ -325,7 +329,7 @@ main {
     background-color: #f2f2f2;
     padding: 20px;
     border-radius: 20px;
-    min-width: 390px;
+    
 }
 
 #popItems {
@@ -568,9 +572,66 @@ footer {
 
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 690px) {
+
+    /* Header */
+    header {
+        display: block;
+        padding: 0px;
+    }
+    #logo {
+        width: 50%;
+        margin: 0;
+        padding: 15px 0 15px 15px;
+    }
+
+    #signup {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    #signup p {
+        margin-top: 0px;
+        padding: 32px 15px 0 0;
+    }
+
+    #formRow {
+        padding: 0px;
+    }
+
+    nav a {
+        border-bottom: 3px solid #f2f2f2;
+        color: #252525;
+        padding: 10px;
+        font-size: 17px;
+        width: 50%;
+        text-align: center;
+
+    }
+    
+    nav a.active, nav a:hover {
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
+        border-top: none;
+    }
 
 
+
+    /* Form Section */
+    .sButton {
+        display: none;
+    }
+
+    #formRow .fa-search {
+        display: block;
+        background-color: #0065FC;
+        color: white;
+        padding: 10px 20px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        font-weight: 700;
+    }
 
 }
 
