@@ -516,10 +516,27 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #f2f2f2;
+    padding: 0px 60px 40px 60px;
 }
 
+.footSect {
+    padding-left: 0px;
+}
+
+.footSect .txtBold {
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.footSect > li {
+    margin-top: 20px;
+}
+
+.footSect > li > a {
+    color: #252525;
+}
 
 @media only screen and (min-width: 768px) {
 
