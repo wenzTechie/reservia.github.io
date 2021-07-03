@@ -642,6 +642,32 @@ footer {
 
     }
 
+    /* Filters */
+
+    #filters {
+        padding: 15px;
+        margin-top: 0;
+    }
+
+    .filtLab  {
+        width: 100%;
+    }
+
+    .filter {
+        margin-top: 15px;
+        
+    }
+
+    .filter i {
+        margin-right: 5px;
+    }
+
+    .filter:nth-of-type(1) { order: 1; margin-left: 0px; }
+    .filter:nth-of-type(2) { order: 3; margin-left: 0px;}
+    .filter:nth-of-type(3) { order: 2; }
+    .filter:nth-of-type(4) { order: 4; margin-left: 0px; }
+    .filter:nth-of-type(5) { order: 5; margin-left: 0px; }
+
 }
 
 
