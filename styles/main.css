@@ -646,7 +646,7 @@ footer {
 
     #filters {
         padding: 15px;
-        margin-top: 0;
+        margin: 0;
     }
 
     .filtLab  {
@@ -669,13 +669,14 @@ footer {
     .filter:nth-of-type(5) { order: 5; margin-left: 0px; }
 
     #resInfo {
-        padding: 15px;
+        padding: 0 20px;
     }
 
     /* main */
     main {
         flex-direction: column-reverse;
         padding: 0px;
+        gap: 0;
     }
 
     /* popular */
@@ -698,6 +699,76 @@ footer {
         width: 90%;
     }
 
+    /* Activities */
+    #activOuter {
+        padding: 0;
+        margin-top: 0px;
+    }
+
+    #activOuter .resHead {
+        margin-left: 20px;
+    }
+
+    #activInner {
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        gap: 0;
+        margin-top: auto;
+    }
+
+    .actItem {
+        width: 90%;
+        height: 200px;
+        border: solid 4px white;
+        border-radius: 22px;
+        margin-top: 30px;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 0 5px 13px rgba(100, 100, 100, 0.4);
+    }
+
+    .actFour {
+        height: 200px;
+    }
+
+    .actFour .actImg {
+        height: 150px;
+    }
+
+    .actThree {
+        height: 200px;
+    }
+
+    .actThree .actImg {
+        height: 150px;
+    }
+    
+    .actTwo {
+        height: 200px;
+    }
+    .actTwo .actImg {
+        height: 150px;
+    }
+    
+    .actOne {
+        height: 200px;
+    }
+    .actOne .actImg {
+        height: 150px;
+    }
+    
+    /* Footer */
+
+    .hideFoot {
+        display: none;
+    }
+
+    footer {
+        padding: 20px;
+        flex-direction: column;
+    }
 
 }
 
