@@ -232,7 +232,7 @@ main {
 
 #accomOuter {
     flex: 2;
-    
+    min-width: 535px;
     max-width: 1024px;
     background-color: #f2f2f2;
     border-radius: 20px;
@@ -541,6 +541,7 @@ footer {
     justify-content: space-between;
     background-color: #f2f2f2;
     padding: 0px 60px 40px 60px;
+    
 }
 
 .footSect {
@@ -564,8 +565,70 @@ footer {
     text-decoration: underline;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
+    /* Accomodations */
+    
 
+    /* Activities */
+    #activOuter {
+        padding: 0;
+        margin: 0 0 40px 0;
+    }
+
+    #activOuter .resHead {
+        margin-left: 20px;
+    }
+
+    #activInner {
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        gap: 0;
+        margin-top: auto;
+    }
+
+    .actItem {
+        width: 40%;
+        height: 200px;
+        border: solid 4px white;
+        border-radius: 22px;
+        margin-top: 30px;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 0 5px 13px rgba(100, 100, 100, 0.4);
+    }
+
+    .actFour {
+        height: 200px;
+    }
+
+    .actFour .actImg {
+        height: 150px;
+    }
+
+    .actThree {
+        height: 200px;
+    }
+
+    .actThree .actImg {
+        height: 150px;
+    }
+    
+    .actTwo {
+        height: 200px;
+    }
+    .actTwo .actImg {
+        height: 150px;
+    }
+    
+    .actOne {
+        height: 200px;
+    }
+    .actOne .actImg {
+        height: 150px;
+    }
+    
 
 
 }
@@ -693,6 +756,7 @@ footer {
     #accomOuter {
         padding: 0px;
         background-color: white;
+        min-width: 0px;
     }
 
     .accom {
@@ -768,6 +832,7 @@ footer {
     footer {
         padding: 20px;
         flex-direction: column;
+        margin-top: 40px;
     }
 
 }
