@@ -112,6 +112,10 @@ nav a.active, nav a:hover {
     font-size: 18px;
 }
 
+#formRow .fa-search {
+    display: none;
+}
+
 
 .locIcon {
     background-color: #F2F2F2;
@@ -228,7 +232,7 @@ main {
 
 #accomOuter {
     flex: 2;
-    min-width: 700px;
+    
     max-width: 1024px;
     background-color: #f2f2f2;
     border-radius: 20px;
@@ -325,7 +329,7 @@ main {
     background-color: #f2f2f2;
     padding: 20px;
     border-radius: 20px;
-    min-width: 390px;
+    
 }
 
 #popItems {
@@ -568,9 +572,203 @@ footer {
 
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 690px) {
 
+    /* Header */
+    header {
+        display: block;
+        padding: 0px;
+    }
+    #logo {
+        width: 50%;
+        margin: 0;
+        padding: 15px 0 15px 15px;
+    }
 
+    #signup {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    #signup p {
+        margin-top: 0px;
+        padding: 32px 15px 0 0;
+    }
+
+    #formRow {
+        padding: 0px;
+    }
+
+    nav a {
+        border-bottom: 3px solid #f2f2f2;
+        color: #252525;
+        padding: 10px;
+        font-size: 17px;
+        width: 50%;
+        text-align: center;
+
+    }
+    
+    nav a.active, nav a:hover {
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
+        border-top: none;
+    }
+
+    /*tagline */
+    #tagline {
+        padding: 15px;
+    }
+
+    /* Form Section */
+
+    #formRow {
+        justify-content: center;
+    }
+
+    .sButton {
+        display: none;
+    }
+
+    #formRow .fa-search {
+        display: block;
+        background-color: #0065FC;
+        color: white;
+        padding: 12px;
+        border-radius: 10px;
+        font-weight: 800;
+        font-size: 18px;
+
+    }
+
+    /* Filters */
+
+    #filters {
+        padding: 15px;
+        margin: 0;
+    }
+
+    .filtLab  {
+        width: 100%;
+    }
+
+    .filter {
+        margin-top: 15px;
+        
+    }
+
+    .filter i {
+        margin-right: 5px;
+    }
+
+    .filter:nth-of-type(1) { order: 1; margin-left: 0px; }
+    .filter:nth-of-type(2) { order: 3; margin-left: 0px;}
+    .filter:nth-of-type(3) { order: 2; margin-left: 10px; }
+    .filter:nth-of-type(4) { order: 4; margin-left: 0px; }
+    .filter:nth-of-type(5) { order: 5; margin-left: 0px; }
+
+    #resInfo {
+        padding: 0 20px;
+    }
+
+    /* main */
+    main {
+        flex-direction: column-reverse;
+        padding: 0px;
+        gap: 0;
+    }
+
+    /* popular */
+    #popOuter {
+        border-radius: 0px;
+        padding: 0px;
+    }
+
+    .popItem{
+        margin-top: 15px;
+    } 
+
+    /* Accomodations */
+    #accomOuter {
+        padding: 0px;
+        background-color: white;
+    }
+
+    .accom {
+        width: 90%;
+    }
+
+    /* Activities */
+    #activOuter {
+        padding: 0;
+        margin-top: 0px;
+    }
+
+    #activOuter .resHead {
+        margin-left: 20px;
+    }
+
+    #activInner {
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        gap: 0;
+        margin-top: auto;
+    }
+
+    .actItem {
+        width: 90%;
+        height: 200px;
+        border: solid 4px white;
+        border-radius: 22px;
+        margin-top: 30px;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 0 5px 13px rgba(100, 100, 100, 0.4);
+    }
+
+    .actFour {
+        height: 200px;
+    }
+
+    .actFour .actImg {
+        height: 150px;
+    }
+
+    .actThree {
+        height: 200px;
+    }
+
+    .actThree .actImg {
+        height: 150px;
+    }
+    
+    .actTwo {
+        height: 200px;
+    }
+    .actTwo .actImg {
+        height: 150px;
+    }
+    
+    .actOne {
+        height: 200px;
+    }
+    .actOne .actImg {
+        height: 150px;
+    }
+    
+    /* Footer */
+
+    .hideFoot {
+        display: none;
+    }
+
+    footer {
+        padding: 20px;
+        flex-direction: column;
+    }
 
 }
 
